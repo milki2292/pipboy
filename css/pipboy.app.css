@@ -12,19 +12,25 @@ body {
 ul > li.nav-item > a.nav-link,
 ul > li.navbar-item.active > a.nav-link {
   color: #03fd03 !important;
+  font-size: 32px;
+  line-height: 22px;
+  padding-bottom: 0px;
+  z-index: 50;
+  position: relative;
+  background: #1c2016;
 }
 
-.navbar-light ul.navbar-nav > li{
-    display: block;
-    position: relative;
-    width: 100%;
+.navbar-light ul.navbar-nav > li {
+  display: block;
+  position: relative;
+  width: 100%;
 }
 .navbar-nav {
-    width: 100%;
+  width: 100%;
 }
 .navbar-nav .nav-item .nav-link {
-    width: 50%;
-    margin: auto;
+  
+  margin: auto;
 }
 
 .center-image img {
@@ -41,16 +47,28 @@ ul > li.navbar-item.active > a.nav-link {
   position: fixed;
   bottom: 0;
   width: calc(100% - 20px);
-  margin: 10px;
+  padding: 10px;
+  border: none !important;
 }
 
-.navbar {
+.navbar,
+.pip-footer {
   border-bottom: 2px solid;
   margin: 0px 10px;
 }
 
+.navbar.navbar-light .navbar-nav {
+    margin:0px 200px ;
+}
+
+.navbar.navbar-light .navbar-nav > li {
+    padding: 0px 20px;
+}
+
 .navbar::before,
-.navbar::after {
+.navbar::after,
+.pip-footer::before,
+.pip-footer::after {
   height: 7px;
   width: 2px;
   content: "";
@@ -67,4 +85,83 @@ ul > li.navbar-item.active > a.nav-link {
 
 .navbar::before {
   left: 0px;
+}
+body::after {
+  height: 100%;
+  width: 100%;
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.4) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  opacity: 0.8;
+  z-index: 10000;
+  pointer-events: none;
+}
+
+.nav-item.active::before {
+    content: "";
+    position: absolute;
+    background: #f00;
+    width: 100%;
+    height: 20px;
+    top: 20px;
+    left: 0;
+    background: #1c2016;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-top: 2px solid;
+}
+
+.nav.nav-tabs {
+    margin: 20px;
+    border-bottom: none;
+    
+}
+
+.nav.nav-tabs > .nav-item > .nav-link:hover {
+    border: 1px solid transparent;
+}
+
+.nav.nav-tabs > li > a {
+    font-size: 26px  !important;
+    background: transparent !important;
+    border: transparent 1px solid !important;
+    padding: 5px 10px;
+}
+
+.nav.nav-tabs > li:nth-child(2) > a {
+    opacity: .5;
+}
+.nav.nav-tabs > li:nth-child(3) > a {
+    opacity: .2;
+}
+
+
+.level-progres{
+    width: 100%;
+    height: 10px;
+    border: 2px solid;
+    display: inline-block;
+    width: 70%;
+}
+
+.level-progres-indicator{
+    width: 70%;
+    background: #03fd03;
+    height: 8px;
+}
+
+.pip-footer .col-3, .pip-footer .col-6 {
+    background: #0e551357;
+}
+.pip-footer .col-6{
+    margin:0px 5px ;
+    flex: 0 0 48%;
 }
