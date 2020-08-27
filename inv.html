@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pipboy</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/pipboy.app.css">
+
+</head>
+
+<body>
+    <nav class=" navbar navbar-expand-md navbar-light">
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav nav-fill">
+                <li class="nav-item "><a class=" nav-link" href="index.html">STAT</a></li>
+                <li class="nav-item active"><a class=" nav-link" href="inv.html">INV</a></li>
+                <li class="nav-item "><a class=" nav-link" href="#">DATA</a></li>
+                <li class="nav-item "><a class=" nav-link" href="#">MAP</a></li>
+                <li class="nav-item "><a class=" nav-link" href="#">RADIO</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+
+
+
+                <ul class="nav nav-tabs">
+                    <li class="nav-item "><a class=" nav-link" href="#status" data-toggle="tab" role="tab">WEAPONS</a>
+                    </li>
+                    <li class="nav-item "><a class=" nav-link" href="#special" data-toggle="tab" role="tab">ARMOR</a>
+                    </li>
+                    <li class="nav-item "><a class=" nav-link" href="#perks" data-toggle="tab" role="tab">AID</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane active full" id="status" role="tabpanel">
+                        <ul class="item-list">
+                            <li><a href="#" class="44_pistol">.44 Pistol</a></li>
+                            <li><a href="#" class="10mm_pistol">10mm Pistol</a></li>
+                            <li><a href="#" class="assault_rifle">Assault Rifle</a></li>
+                        </ul>
+
+                        <div class="item-stats">
+                            <div class="row-highlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="damage pull-right"> </div>
+                                        <div class="pull-left">Damage</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-highlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="ammo pull-right"> </div>
+                                        <div class="pull-left">Ammo</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-highlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="fire_rate pull-right"> </div>
+                                        <div class="pull-left">Fire Rate</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-highlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="range pull-right"> </div>
+                                        <div class="pull-left">Range</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-highlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="accuracy pull-right"> </div>
+                                        <div class="pull-left">Accuracy</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-highlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="weight pull-right"> </div>
+                                        <div class="pull-left">Weight</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-highlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="value pull-right"> </div>
+                                        <div class="pull-left">Value</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane " id="special" role="tabpanel">
+                        Armor
+                    </div>
+                    <div class="tab-pane " id="perks" role="tabpanel">
+                        Aid
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <navbar class=" navbar-light pip-footer">
+        <div class="row">
+            <div class="col-3">
+                HP 90/90
+            </div>
+            <div class="col-6">
+                <span>LEVEL 1</span>
+                <div class="level-progres">
+                    <div class="level-progres-indicator"></div>
+                </div>
+            </div>
+            <div class="col-3 text-right">
+                AP 50/50
+            </div>
+        </div>
+    </navbar>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/pipboy.app.js"></script>
+</body>
+
+
+
+</html>
